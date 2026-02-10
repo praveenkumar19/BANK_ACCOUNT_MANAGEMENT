@@ -1,2 +1,6 @@
 # BANK_ACCOUNT_MANAGEMENT
-A Java program simulating a simple bank account. Users can deposit, withdraw, and view account details. It demonstrates basic OOP concepts with a console-based interactive interface for managing a single bank account.
+This program is a simple Banking Application designed to demonstrate Encapsulation, a core pillar of Object-Oriented Programming. It creates a digital representation of a bank account where data and the logic to modify that data are bundled together within a single class.
+
+The BankAccount class acts as a secure container for sensitive information like the account number and balance. By marking these fields as private, the program prevents external code from directly tampering with the money. Instead, it provides "gatekeeper" methods—deposit() and withdraw()—that enforce strict rules. For example, the withdrawal logic ensures that the requested amount is both positive and does not exceed the available funds, effectively preventing an accidental negative balance.
+
+The BankApp class serves as the driver for the program. It initializes a specific account with a starting balance and uses a Scanner to capture real-time user input. The flow follows a linear path: it accepts a deposit, then a withdrawal, and finally executes the displayAccount() method to show the updated status. This structure ensures that every change to the account balance is validated, providing a safe and predictable way to manage financial transactions in code.
